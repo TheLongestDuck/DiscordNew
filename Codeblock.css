@@ -3441,5 +3441,3 @@ code {
 /* This is to make the home icon go away. You can ignore this */
 [data-list-item-id="guildsnav___home"] .childWrapper__6e9f8 { background: var(--home-icon) center/cover no-repeat;} /* Home Icon */
 [data-list-item-id="guildsnav___home"] .childWrapper__6e9f8 svg { display: none;}  /* Home Icon */
-
-
