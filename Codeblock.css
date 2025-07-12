@@ -3521,3 +3521,41 @@ code {
   --normal-text: #dcdcde;
   --muted-text: #86868e;
 }
+
+:root {
+  /* ================================ */
+/* ==== You can ignore everything ==== */
+/* ====      beyond this point    ==== */
+/* ================================ */
+
+
+  /* APP BACKGROUND */
+  --background-filter: saturate(calc(var(--saturation-factor, 1) * 1)); /* background effects */
+  --background-position: center;       /* background position */
+  --background-size: cover;             /* background size */
+  --background-attachment: fixed;      /* background attachment */
+
+  /* HOME ICON */
+  --home-size: cover;   /* home icon size */
+
+  /* CHANNEL COLORS */
+  --channel-normal: var(--interactive-normal);
+  --channel-muted: var(--interactive-muted);
+  --channel-hover: var(--interactive-hover);
+  --channel-selected: var(--interactive-active);
+  --channel-selected-bg: var(--main-color);
+  --channel-unread: var(--main-color);
+  --channel-unread-hover: var(--hover-color);
+
+  --focus-color: var(--main-color);
+}
+
+/* Replace home icon with custom image */
+[data-list-item-id="guildsnav___home"] .childWrapper__6e9f8 {
+  background: var(--home-icon) center/cover no-repeat;
+}
+
+[data-list-item-id="guildsnav___home"] .childWrapper__6e9f8 svg {
+  display: none;
+}
+
